@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<!-- jPList Core -->		
+	<link href="layout/styles/jplist.core.min.css" rel="stylesheet" type="text/css">
+
+	<!-- Textbox Control -->			
+	<link href="layout/styles/jplist.textbox-filter.min.css" rel="stylesheet" type="text/css">
+
+	<script src="layout/scripts/jquery.min.js"></script>
+	<script src="layout/scripts/jplist.core.min.js"></script>	
+	<script src="layout/scripts/jplist.pagination-bundle.min.js"></script>
+	<script src="layout/scripts/jplist.textbox-filter.min.js"></script>
+</head>
+<body>
+	<div id="test1">	
+		   
+	   <!-- HTML data -->   
+	   <div class="list">
+	      
+	      <!-- item 1 -->
+	      <div class="list-item">	
+	         a
+	      </div>
+	      
+	      <!-- item 2 -->
+	      <div class="list-item">	
+	         b
+	      </div>
+	      
+	      <div class="list-item">	
+	         c
+	      </div>
+
+	      <div class="list-item">	
+	         d
+	      </div>
+
+	      <div class="list-item">	
+	         e
+	      </div>
+
+	      <div class="list-item">	
+	         f
+	      </div>
+
+	      <div class="list-item">	
+	         g
+	      </div>
+
+	      <div class="list-item">	
+	         h
+	      </div>
+
+	      <div class="list-item">	
+	         i
+	      </div>
+
+	      <div class="list-item">	
+	         j
+	      </div>
+
+	      <div class="list-item">	
+	         k
+	      </div>
+
+	      <div class="list-item">	
+	         aaaseeddga
+	      </div>
+
+	      <div class="list-item">	
+	         basfdcsf
+	      </div>
+
+	      <div class="list-item">	
+	         kkkakakak
+	      </div>
+
+	      <div class="list-item">	
+	         kkek
+	      </div>
+
+	      <div class="list-item">	
+	         kassswdss
+	      </div>
+
+	      <div class="list-item">	
+	         kwrrfssdf
+	      </div>
+
+	      <div class="list-item">	
+	         ksdfsfsd
+	      </div>
+
+	      <div class="list-item">	
+	         aaaaaa
+	      </div>
+
+	      <div class="list-item">	
+	         a123
+	      </div>
+
+	      <div class="list-item">	
+	         z
+	      </div>
+	      
+	   </div>
+	   
+	   <!-- no results found -->
+	   <div class="jplist-no-results">
+	      <p>No results found</p>
+	   </div>
+	    
+	   <!-- panel -->
+	   <div class="jplist-panel">						
+	      <!-- pagination control -->
+	      <div 
+	         class="jplist-pagination" 
+	         data-control-type="pagination" 
+	         data-control-name="paging" 
+	         data-control-action="paging"
+	         data-items-per-page="2"
+	         data-prev="Previous"
+	         data-next="Next"
+	         >
+	      </div>	
+	      <!-- filter by title -->
+			<div class="text-filter-box">
+			                        
+			   <!--[if lt IE 10]>
+			   <div class="jplist-label">Filter by Title:</div>
+			   <![endif]-->
+			   
+			   <input 
+			      data-path=".list-item" 
+			      data-button="#title-search-button"
+			      type="text" 
+			      value="" 
+			      placeholder="Filter by Title" 
+			      data-control-type="textbox" 
+			      data-control-name="title-filter" 
+			      data-control-action="filter"
+			      data-mode="contains"
+			   />
+			   
+			   <button 
+			      type="button" 
+			      id="title-search-button">
+			      <i class="fa fa-search"></i>
+			   </button>
+			</div>       
+	   </div>	           
+	</div>
+
+	<script>
+	$('document').ready(function(){
+	   $('#test1').jplist({				
+	      itemsBox: '.list' 
+	      ,itemPath: '.list-item' 
+	      ,panelPath: '.jplist-panel'	
+	   });
+	   
+	});
+	</script>
+</body>
+</html>

@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<link href="layout/styles/jplist.core.min.css" rel="stylesheet" type="text/css" />	
+	<link href="layout/styles/jplist.autocomplete.min.css" rel="stylesheet" type="text/css" />
+	<link href="layout/styles/jplist.textbox-filter.min.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+	<!-- demo -->
+	<div id="demo1">			 
+	   
+	   <!-- HTML data -->   
+	   <div class="list">
+	      
+	      <!-- item 1 -->
+	      <div class="list-item">	
+	         a
+	      </div>
+	      
+	      <!-- item 2 -->
+	      <div class="list-item">	
+	         b
+	      </div>
+	      
+	      <div class="list-item">	
+	         c
+	      </div>
+
+	      <div class="list-item">	
+	         d
+	      </div>
+
+	      <div class="list-item">	
+	         e
+	      </div>
+
+	      <div class="list-item">	
+	         f
+	      </div>
+
+	      <div class="list-item">	
+	         g
+	      </div>
+
+	      <div class="list-item">	
+	         h
+	      </div>
+
+	      <div class="list-item">	
+	         i
+	      </div>
+
+	      <div class="list-item">	
+	         j
+	      </div>
+
+	      <div class="list-item">	
+	         k
+	      </div>
+	      
+	   </div>
+	   
+	   <!-- no results found -->
+	   <div class="jplist-no-results">
+	      <p>No results found</p>
+	   </div>
+	    
+	   <!-- panel -->
+	   <div class="jplist-panel">						
+	      <!-- pagination control -->
+	      <div 
+	         class="jplist-pagination" 
+	         data-control-type="pagination" 
+	         data-control-name="paging" 
+	         data-control-action="paging"
+	         data-items-per-page="2"
+	         data-prev="Previous"
+	         data-next="Next"
+	         >
+	      </div>	      
+	   </div>	           
+	</div>
+
+	<br><br><br>
+
+	<!-- demo -->
+	<div id="demo2">
+	   
+	   <!-- panel -->
+	   <div class="jplist-panel">						
+	   <!-- autocomplete control -->
+	   <div 
+	      class="jplist-autocomplete"
+	      data-control-type="autocomplete" 
+	      data-control-name="default-autocomplete" 
+	      data-control-action="autocomplete"
+	      data-path=".title">
+	      
+	      <!-- autocomplete textbox -->
+	      <input type="text" placeholder="Filter by Title" />
+	      
+	      <!-- autocomplete button -->
+	      <button type="button">
+	         <i class="fa fa-angle-double-down"></i>
+	      </button>			
+	   </div>
+
+	   <br><br><br>
+	      
+	   </div>				 
+	   
+	   <!-- HTML data -->   
+	   <div class="list">
+	      
+	      <!-- item 1 -->
+	      <a href="..." title="" class="list-item-link">	
+	         <div class="title">Calendar</div>
+	         ...
+	      </a>
+	      
+	      <!-- item 2 -->
+	      <a href="..." title="" class="list-item-link">	
+	         <div class="title">Architecture</div>
+	         ...
+	      </a>
+	      
+	      <a href="..." title="" class="list-item-link">	
+	         <div class="title">asdasd</div>
+	         ...
+	      </a>
+	      <a href="..." title="" class="list-item-link">	
+	         <div class="title">dsadsa</div>
+	         ...
+	      </a>
+	      <a href="..." title="" class="list-item-link">	
+	         <div class="title">qweqwe</div>
+	         ...
+	      </a>
+	      <a href="..." title="" class="list-item-link">	
+	         <div class="title">ewqeqw</div>
+	         ...
+	      </a>
+	      
+	   </div>
+	   
+	   <!-- no results found -->
+	   <div class="jplist-no-results">
+	      <p>No results found</p>
+	   </div>
+	               
+	</div>
+	
+	<!-- demo -->
+	<div id="demo3">
+	   
+	   <!-- panel -->
+	   <div class="jplist-panel">						
+	      ...
+	      
+	   </div>				 
+	   
+	   <!-- HTML data -->   
+	   <div class="list">
+	      
+	      <!-- item 1 -->
+	      <div class="list-item">	
+	         assssss
+	      </div>
+	      
+	      <!-- item 2 -->
+	      <div class="list-item">	
+	         dssaaaaa
+	      </div>
+	      
+	      <div class="list-item">	
+	         xzczxcxzcz
+	      </div>
+
+	      <div class="list-item">	
+	         ccccccccc
+	      </div>
+
+	      <div class="list-item">	
+	         aaaaaaaaaaaaaa
+	      </div>
+
+	      <div class="list-item">	
+	         bbbbbbbbbbbbbbb
+	      </div>
+
+	      <div class="list-item">	
+	         qqqqqqqqqqqqqqqqq
+	      </div>
+	      
+	   </div>
+	   
+	   <!-- no results found -->
+	   <div class="jplist-no-results">
+	      <p>No results found</p>
+	   </div>
+
+	   <!-- filter by title -->
+		<div class="text-filter-box">
+		   <i class="fa fa-pencil jplist-icon"></i>
+		   
+		   <!--[if lt IE 10]>
+		   <div class="jplist-label">Filter by Title:</div>
+		   <![endif]-->
+		   
+		   <input 
+		     data-path=".title" 
+		     type="text" 
+		     value="" 
+		     class="jplist-no-right-border"
+		     placeholder="Filter by Title" 
+		     data-control-type="textbox" 
+		     data-control-name="title-filter" 
+		     data-control-action="filter"
+		   />
+		   
+		   <!-- clear textbox button -->
+		   <i class="fa fa-times-circle jplist-clear" data-type="clear"></i>
+		</div>
+	               
+	</div>
+	<script src="layout/scripts/jquery.min.js"></script>
+	<!-- jPList Core -->			
+	<script src="layout/scripts/jplist.core.min.js"></script>	
+	<!-- Pagination Bundle -->
+	<script src="layout/scripts/jplist.pagination-bundle.min.js"></script>
+
+	<script src="layout/scripts/jplist.autocomplete.min.js"></script>
+
+	<script src="layout/scripts/jplist.textbox-filter.min.js"></script>
+	<script>
+	$('document').ready(function(){
+	   $('#demo1').jplist({				
+	      itemsBox: '.list' 
+	      ,itemPath: '.list-item' 
+	      ,panelPath: '.jplist-panel'	
+	   });
+	   
+	});
+	</script>   
+	<script>
+	$('document').ready(function(){
+	   $('#demo2').jplist({				
+	      itemsBox: '.list' 
+	      ,itemPath: '.list-item-link' 
+	      ,panelPath: '.jplist-panel'	
+	   });
+	   
+	});
+	</script>
+	<script>
+	$('document').ready(function(){
+	   $('#demo3').jplist({				
+	      itemsBox: '.list' 
+	      ,itemPath: '.list-item' 
+	      ,panelPath: '.jplist-panel'	
+	   });
+	   
+	});
+	</script>
+</body>
+</html>
